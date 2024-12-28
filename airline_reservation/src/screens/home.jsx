@@ -1,28 +1,30 @@
-import React from 'react'
-import './Home.css';
+import React from "react";
+import "./Home.css";
+import SearchFlight from "./SearchFlight";
 
 function Home() {
   return (
     <div>
-        <header>
-            <div class="logo">
-                <a href="/">New Horizon</a>
-            </div>
-
-            <nav>
-                <a href="Flights">Flights</a>
-                <a href="Book">Book</a>
-                <a href="Search">Search</a>
-                <a href="Help">Help</a>
-                <a href="Sign Up">Sign Up</a>
-            </nav>
-        </header>
-
-        <div class="hero">
-            <h1>Begin your Adventures in comfort</h1>
+      <header>
+        <div class="logo">
+          <a href="/">New Horizon</a>
         </div>
 
-        {/* <div class="search-form">
+        <nav>
+          <a href="Flights">Flights</a>
+          <a href="Book">Book</a>
+          <a href="Search">Search</a>
+          <a href="Help">Help</a>
+          <a href="Sign In">Sign In</a>
+        </nav>
+      </header>
+
+      <div class="hero">
+        <h1>Begin your Adventures in comfort</h1>
+        <SearchFlight />
+      </div>
+
+      {/* <div class="search-form">
             <form>
                 <div class="section1">
                     <div class="form-group">
@@ -52,4 +54,4 @@ function Home() {
   );
 }
 
-export default Home
+export default Home;
